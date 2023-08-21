@@ -49,7 +49,7 @@ hunter_add_version(
     VERSION
     "1.1.1c"
     URL
-    "https://github.com/openssl/openssl/archive/OpenSSL_1_1_1c.tar.gz"
+    "https://artifactory.corp.linkedin.com:8083/artifactory/ext-libraries/openssl/openssl/1.1.1c/openssl-1.1.1c.tar.gz"
     SHA1
     eb59b090bd757e30b676fb5e80c25ddb5a2f9511
 )
@@ -303,9 +303,9 @@ hunter_add_version(
     VERSION
     "1.1.0g"
     URL
-    "https://github.com/openssl/openssl/archive/OpenSSL_1_1_0g.tar.gz"
+    "https://artifactory.corp.linkedin.com:8083/artifactory/ext-libraries/org/openssl/openssl/1.1.0g/openssl-1.1.0g.tar.gz"
     SHA1
-    07a8861dfb51d3ba983668f0f8daeac49bf3dbc3
+    e8240a8be304d4317a750753321b073c664bfdd4
 )
 
 hunter_add_version(
@@ -677,7 +677,7 @@ hunter_add_version(
   VERSION
   "3.1.2"
   URL
-  "https://github.com/openssl/openssl/archive/openssl-3.1.2.tar.gz"
+  "https://artifactory.corp.linkedin.com:8083/artifactory/ext-libraries/org/openssl/openssl/3.1.2/openssl-3.1.2.tar.gz"
   SHA1
   6a3958748929864eb35b51f3167a1a1414cd0ddb
   )

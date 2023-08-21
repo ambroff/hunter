@@ -140,7 +140,9 @@ set(configure_opts ${configure_opts} threads ${shared_flag})
 
 hunter_status_debug("Configure command: ${configure_command}")
 hunter_status_debug("Configure options: ${configure_opts}")
-
+find_program(patch_bin "patch" REQUIRED)
+set(patch_cmd ${patch_bin} -p1 -i "@HUNTER_PACKAGE_SCRIPT_DIR@config.pm.patch")
+				    
 ExternalProject_Add(
     "@HUNTER_EP_NAME@"
     URL
@@ -156,6 +158,8 @@ ExternalProject_Add(
     INSTALL_DIR
     "@HUNTER_PACKAGE_INSTALL_PREFIX@"
         # not used, just avoid creating Install/<name> empty directory
+    PATCH_COMMAND
+    ${patch_cmd}
     CONFIGURE_COMMAND
     ${configure_command}
     ${configure_opts}
