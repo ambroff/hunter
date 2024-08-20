@@ -78,6 +78,12 @@ hunter_add_version(
     URL "https://github.com/cpp-pm/grpc/archive/refs/tags/v1.44.0-p0.tar.gz"
     SHA1 "9521efd87a6ea0ca1102bf6e5acff835eecf5841")
 
+hunter_add_version(
+  PACKAGE_NAME gRPC
+  VERSION "1.65.3"
+  URL "https://github.com/stephans/hunter-grpc/archive/refs/tags/v1.65.3-hunter.tar.gz"
+  SHA1 "a382b84c7455eba50b0b2f2017bdee03e0761fa8")
+
 hunter_cmake_args(
    gRPC
    CMAKE_ARGS
